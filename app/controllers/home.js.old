@@ -1,0 +1,8 @@
+module.exports = function() {
+    var controller = {};
+    controller.index = function(req, res) {
+        //Return index page
+        res.render('index', { nome: 'ExpressJS', curso: 'Cursos', contato: 'Contatos' });
+    };
+    return controller;
+}
